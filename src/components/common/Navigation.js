@@ -1,17 +1,22 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar'
 import {Nav, Container} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+
 const Navigation = () => {
   return (
     <>
-      <Navbar bg="danger" variant="dark">
+      <Navbar collapseOnSelect bg="danger" expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">CRUD Café</Navbar.Brand>
+          <Link to="/" className="navbar-brand">CRUD Café</Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Inicio">Inicio</Nav.Link>
-            <Nav.Link href="#Productos">Productos</Nav.Link>
-            <Nav.Link href="#Extra">Extra</Nav.Link>
+            <Link to="/" className="nav-link">Inicio</Link>
+            <Link to="/productos" className="nav-link">Productos</Link>
+            <Link to="/error404" className="nav-link">Extra</Link>
           </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

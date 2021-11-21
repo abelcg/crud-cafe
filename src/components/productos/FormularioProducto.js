@@ -17,9 +17,11 @@ const FormularioProducto = (props) => {
         <Form.Label>Categoria*</Form.Label>
         <Form.Select>
           <option>Seleccione una opción</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option value="1">Bebida Caliente</option>
+          <option value="2">Bebida Fría</option>
+          <option value="3">Sandwich</option>
+          <option value="4">Dulce</option>
+          <option value="5">Salado</option>
         </Form.Select>
       </Form.Group>
       <Button className="w-100" variant="primary" type="submit">
