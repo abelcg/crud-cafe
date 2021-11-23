@@ -3,7 +3,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Button from 'react-bootstrap/Button'
 import ItemProducto from './ItemProducto';
 
-const ListaProducto = () => {
+const ListaProducto = (props) => {
     return (
         <section className="container">
         <h2 className="fw-bold my-5 text-center">Lista de productos</h2>
@@ -14,7 +14,10 @@ const ListaProducto = () => {
             </p>
         </div>
         <ListGroup>
-            <ItemProducto></ItemProducto>
+            {
+                props.productos.map((producto)=><ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+            }
+            
         </ListGroup>
         </section>
     );

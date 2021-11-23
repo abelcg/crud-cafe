@@ -3,13 +3,13 @@
     {
       "id": 1,
       "nombreProducto": "cafe con leche",
-      "precioProducto": "40",
+      "precioProducto": "45",
       "categoriaProducto": "bebida-caliente"
     },
     {
       "id": 2,
       "nombreProducto": "Medialuna",
-      "precioProducto": "40",
+      "precioProducto": "20",
       "categoriaProducto": "dulce"
     },
     {
