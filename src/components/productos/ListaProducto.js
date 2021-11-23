@@ -1,7 +1,8 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup'
-import Button from 'react-bootstrap/Button'
+
 import ItemProducto from './ItemProducto';
+import {Link} from 'react-router-dom';
 
 const ListaProducto = (props) => {
     return (
@@ -10,7 +11,8 @@ const ListaProducto = (props) => {
         <hr />
         <div className="d-flex flex-row justify-content-end align-items-center">
             <p className="fw-bold">Agregar nuevos productos:
-            <Button className="ms-3" variant="primary"><i className="bi bi-plus-circle"></i></Button>{' '}
+           
+            <Link to='/productos/nuevo' className="btn btn-primary ms-3"><i className="bi bi-plus-circle"></i></Link>
             </p>
         </div>
         <ListGroup>
