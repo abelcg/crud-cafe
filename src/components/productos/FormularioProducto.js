@@ -1,17 +1,20 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 
 const FormularioProducto = (props) => {
+  
   return (
-    <Form>
+    <>
+    <Form onSubmit={props.handleSubmit}>
       <Form.Group className="mb-3" controlId="formNombreProducto">
         <Form.Label>Nombre del Producto*</Form.Label>
-        <Form.Control type="text" placeholder="Ej: café" maxlength="40" onChange={(e)=> props.setNombreProducto(e.target.value)} />
+        <Form.Control type="text" placeholder="Ej: café" maxLength="40" onChange={(e)=> props.setNombreProducto(e.target.value)} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formPrecio">
         <Form.Label>Precio*</Form.Label>
-        <Form.Control type="text" placeholder="ej: 50" maxlength="10" onChange={(e)=> props.setPrecioProducto(e.target.value)} />
+        <Form.Control type="text" placeholder="ej: 50" maxLength="10" onChange={(e)=> props.setPrecioProducto(e.target.value)} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formCategoriaProducto">
         <Form.Label>Categoria*</Form.Label>
@@ -28,6 +31,10 @@ const FormularioProducto = (props) => {
         {props.boton}
       </Button>
     </Form>
+    { props.error === true ? <Alert variant='danger'>
+     Debe cargar todos los datos y el precio debe estar entre 1 y $4999
+   </Alert> : null}
+   </>
   );
 };
 
