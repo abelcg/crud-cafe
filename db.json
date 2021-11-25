@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "nombreProducto": "Medialuna",
+      "nombreProducto": "medialuna",
       "precioProducto": "20",
       "categoriaProducto": "dulce"
     },
@@ -17,6 +17,54 @@
       "nombreProducto": "cafe",
       "precioProducto": "40",
       "categoriaProducto": "bebida-caliente"
+    },
+    {
+      "nombreProducto": "sandwich",
+      "precioProducto": "68",
+      "categoria": "sandwich",
+      "id": 4
+    },
+    {
+      "nombreProducto": "submarino",
+      "precioProducto": "88",
+      "categoria": "bebida-caliente",
+      "id": 5
+    },
+    {
+      "nombreProducto": "te",
+      "precioProducto": "30",
+      "categoria": "bebida-caliente",
+      "id": 6
+    },
+    {
+      "nombreProducto": "alfajor de maicena",
+      "precioProducto": "50",
+      "categoria": "dulce",
+      "id": 7
+    },
+    {
+      "nombreProducto": "alfajor de chocolate",
+      "precioProducto": "50",
+      "categoria": "dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "pan frances",
+      "precioProducto": "150",
+      "categoria": "salado",
+      "id": 9
+    },
+    {
+      "nombreProducto": "licuado de frutilla",
+      "precioProducto": "85",
+      "categoria": "bebida-fria",
+      "id": 10
+    },
+    {
+      "nombreProducto": "licuado de banana",
+      "precioProducto": "95",
+      "categoria": "bebida-fria",
+      "id": 11
     }
   ]
 }
