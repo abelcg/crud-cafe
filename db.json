@@ -1,22 +1,10 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombreProducto": "cafe con leche",
-      "precioProducto": "45",
-      "categoriaProducto": "bebida-caliente"
-    },
-    {
       "id": 2,
       "nombreProducto": "medialuna",
       "precioProducto": "20",
       "categoriaProducto": "dulce"
-    },
-    {
-      "id": 3,
-      "nombreProducto": "cafe",
-      "precioProducto": "40",
-      "categoriaProducto": "bebida-caliente"
     },
     {
       "nombreProducto": "sandwich",
@@ -49,12 +37,6 @@
       "id": 8
     },
     {
-      "nombreProducto": "pan frances",
-      "precioProducto": "150",
-      "categoria": "salado",
-      "id": 9
-    },
-    {
       "nombreProducto": "licuado de frutilla",
       "precioProducto": "85",
       "categoria": "bebida-fria",
@@ -65,6 +47,18 @@
       "precioProducto": "95",
       "categoria": "bebida-fria",
       "id": 11
+    },
+    {
+      "nombreProducto": "factura con crema",
+      "precioProducto": "25",
+      "categoria": "dulce",
+      "id": 12
+    },
+    {
+      "nombreProducto": "Chipa",
+      "precioProducto": "25",
+      "categoria": "salado",
+      "id": 13
     }
   ]
 }
