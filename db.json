@@ -59,6 +59,12 @@
       "precioProducto": "25",
       "categoria": "salado",
       "id": 13
+    },
+    {
+      "nombreProducto": "sanguche",
+      "precioProducto": "68",
+      "categoria": "sandwich",
+      "id": 14
     }
   ]
 }
