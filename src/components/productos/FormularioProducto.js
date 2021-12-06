@@ -6,7 +6,7 @@ import Alert from "react-bootstrap/Alert";
 const FormularioProducto = (props) => {
   return (
     <>
-      <Form onSubmit={props.handleSubmit}>
+      <Form onSubmit={props.handleSubmit || props.handleSubmits}>
         <Form.Group className="mb-3" controlId="formNombreProducto">
           <Form.Label>Nombre del Producto*</Form.Label>
           <Form.Control
@@ -15,6 +15,7 @@ const FormularioProducto = (props) => {
             maxLength="40"
             onChange={(e) => props.setNombreProducto(e.target.value)}
             defaultValue={(!props.editar) ? "" : props.producto.nombreProducto}
+            ref={props.nombreProductoRef}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formPrecio">
@@ -25,11 +26,12 @@ const FormularioProducto = (props) => {
             maxLength="10"
             onChange={(e) => props.setPrecioProducto(e.target.value)}
             defaultValue={(!props.editar) ? "" : props.producto.precioProducto}
+            ref={props.precioProductoRef}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formCategoriaProducto">
           <Form.Label>Categoria*</Form.Label>
-          <Form.Select onChange={(e) => props.setCategoria(e.target.value)}>
+          <Form.Select value={props.categorias} onChange={((e) => (!props.editar) ? (props.setCategoria(e.target.value)) : props.setCategorias(e.target.value))}>
             <option value="">Seleccione una opción</option>
             <option value="bebida-caliente">Bebida Caliente</option>
             <option value="bebida-fria">Bebida Fría</option>

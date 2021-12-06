@@ -1,18 +1,6 @@
 {
   "productos": [
     {
-      "id": 2,
-      "nombreProducto": "medialuna",
-      "precioProducto": "20",
-      "categoriaProducto": "dulce"
-    },
-    {
-      "nombreProducto": "sandwich",
-      "precioProducto": "68",
-      "categoria": "sandwich",
-      "id": 4
-    },
-    {
       "nombreProducto": "submarino",
       "precioProducto": "88",
       "categoria": "bebida-caliente",
@@ -56,15 +44,21 @@
     },
     {
       "nombreProducto": "Chipa",
-      "precioProducto": "25",
+      "precioProducto": "55",
       "categoria": "salado",
       "id": 13
     },
     {
-      "nombreProducto": "sanguche",
-      "precioProducto": "68",
+      "nombreProducto": "sandwich",
+      "precioProducto": "150",
       "categoria": "sandwich",
       "id": 14
+    },
+    {
+      "nombreProducto": "pan 2 kg",
+      "precioProducto": "200",
+      "categoria": "salado",
+      "id": 15
     }
   ]
 }
