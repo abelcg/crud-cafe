@@ -4,7 +4,8 @@ Este proyecto se creó usando [Create React App](https://github.com/facebook/cre
 
 ## Descripción general
 
-App realizada con React de un CRUD de productos de cafetería.  
+App realizada con React de un CRUD de productos de cafetería. 
+Se usó los hooks useState, useEffect y useRef para el llamado y persistencia de los datos de los productos a la API simulada con jason-server.
 
 ## AUTOR
 Abel Córdoba González
