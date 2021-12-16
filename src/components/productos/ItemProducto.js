@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 import {Link} from 'react-router-dom'
 
 const ItemProducto = (props) => {
-    const URL = process.env.REACT_APP_API_URL+'/'+props.producto.id;
+    const URL = process.env.REACT_APP_API_URL+'/'+props.producto._id;
 
     const eliminarProducto=  ()=> {
       //  console.log(URL)
@@ -53,7 +53,7 @@ const ItemProducto = (props) => {
     return (
         <ListGroup.Item className="d-flex flex-row justify-content-end align-items-center">
             {props.producto.nombreProducto}<span className="fw-bold ms-2 me-auto">- Precio: $ {props.producto.precioProducto}</span>  
-             <Link className="btn btn-warning ms-2" to={`/productos/editar/${props.producto.id}`}><i className="bi bi-pencil"></i></Link>{' '}
+             <Link className="btn btn-warning ms-2" to={`/productos/editar/${props.producto._id}`}><i className="bi bi-pencil"></i></Link>{' '}
              <Button className="ms-2" variant="danger" onClick={() => eliminarProducto()}><i className="bi bi-trash"></i></Button>{' '}
         </ListGroup.Item>
     );

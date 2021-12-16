@@ -12,7 +12,7 @@ const FormularioProducto = (props) => {
           <Form.Control
             type="text"
             placeholder="Ej: café"
-            maxLength="40"
+            P
             onChange={(e) => props.setNombreProducto(e.target.value)}
             defaultValue={(!props.editar) ? "" : props.producto.nombreProducto}
             ref={props.nombreProductoRef}

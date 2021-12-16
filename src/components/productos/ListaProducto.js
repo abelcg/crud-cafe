@@ -17,7 +17,7 @@ const ListaProducto = (props) => {
         </div>
         <ListGroup className="mb-5">
             {
-                props.productos.map((producto)=><ItemProducto key={producto.id} producto={producto} consultaAPI={props.consultaAPI}></ItemProducto>)
+                props.productos.map((producto)=><ItemProducto key={producto._id} producto={producto} consultaAPI={props.consultaAPI}></ItemProducto>)
             }
             
         </ListGroup>
